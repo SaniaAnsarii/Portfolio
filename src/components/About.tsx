@@ -36,13 +36,19 @@ const About = () => {
             </p>
            
 
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white text-lg px-8 py-6 h-auto"
+            <a
+              href="https://drive.google.com/file/d/1-TIlLnpLC6gup7YXtz58QnbNLgxRhM8c/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              View Resume
-            </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white text-lg px-8 py-6 h-auto"
+              >
+                View Resume
+              </Button>
+            </a>
           </div>
         </div>
       </div>

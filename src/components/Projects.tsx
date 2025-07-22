@@ -3,6 +3,7 @@ import { ExternalLink, Github } from "lucide-react";
 import project1Image from "@/assets/Project-1.png";
 import project2Image from "@/assets/Project-2.png";
 import project3Image from "@/assets/Project-3.png";
+import project4Image from "@/assets/Project-4.png";
 
 const Projects = () => {
   const projects = [
@@ -32,6 +33,15 @@ const Projects = () => {
       image: project3Image,
       liveUrl: "https://share-your-food-recipe-3vro.vercel.app/",
       sourceUrl: "https://github.com/SaniaAnsarii/ShareYourFoodRecipe.git",
+    },
+    {
+      id: 4,
+      title: "Entertainment Web App",
+      description:
+        "A modern entertainment web app for browsing movies and TV shows. Built with React and styled with Tailwind CSS, it features search, trending, and bookmarking functionalities. Responsive and deployed on Vercel.",
+      image: project4Image,
+      liveUrl: "https://entertainmentapp-frontend.vercel.app/",
+      sourceUrl: "https://github.com/SaniaAnsarii/Entertainmentapp-frontend",
     },
   ];
 

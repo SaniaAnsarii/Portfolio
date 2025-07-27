@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import project1Image from "@/assets/Project-1.png";
@@ -46,88 +47,92 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-section px-6 lg:px-8 bg-background">
-      <div className="max-w-content mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-16">
-          PROJECTS
-        </h2>
+  <section id="projects" className="py-section px-6 lg:px-8 bg-background">
+ 
 
-        <div className="space-y-16">
-          {projects.map((project, index) => (
-            <div
-              key={project.id}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
-                index % 2 === 1 ? "lg:flex-row-reverse" : ""
-              }`}
-            >
-              <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
-                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                  {project.title}
-                </h3>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="teal" size="lg" className="gap-2">
-                      <ExternalLink className="w-4 h-4" />
-                      See Live
-                    </Button>
-                  </a>
-                  <a
-                    href={project.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="outline" size="lg" className="gap-2">
-                      <Github className="w-4 h-4" />
-                      Source Code
-                    </Button>
-                  </a>
-                </div>
-              </div>
+    <div className="max-w-content mx-auto">
+      <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-16">
+        PROJECTS
+      </h2>
 
-              <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                <div className="rounded-lg overflow-hidden shadow-elegant hover:shadow-teal transition-all duration-300">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+      <div className="space-y-16">
+        {projects.map((project, index) => (
+          <div
+            key={project.id}
+            className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
+              index % 2 === 1 ? "lg:flex-row-reverse" : ""
+            }`}
+          >
+            <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                {project.title}
+              </h3>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="teal" size="lg" className="gap-2">
+                    <ExternalLink className="w-4 h-4" />
+                    See Live
+                  </Button>
+                </a>
+                <a
+                  href={project.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline" size="lg" className="gap-2">
+                    <Github className="w-4 h-4" />
+                    Source Code
+                  </Button>
+                </a>
               </div>
             </div>
-          ))}
-        </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <h3 className="text-2xl font-semibold text-foreground mb-4">
-            Have a project in mind?
-          </h3>
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            From concept to deployment, I'll help you build scalable web
-            applications that drive results.
-          </p>
-          <Button
-            variant="teal-outline"
-            size="lg"
-            onClick={() =>
-              document
-                .getElementById("contact")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-            className="text-lg px-8 py-6 h-auto"
-          >
-            Start Your Project
-          </Button>
-        </div>
+            <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
+              <div className="rounded-lg overflow-hidden shadow-elegant hover:shadow-teal transition-all duration-300">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-    </section>
+
+      {/* CTA Section */}
+      <div className="text-center mt-16">
+        <h3 className="text-2xl font-semibold text-foreground mb-4">
+          Have a project in mind?
+        </h3>
+        <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+          From concept to deployment, I'll help you build scalable web
+          applications that drive results.
+        </p>
+        <Button
+          variant="teal-outline"
+          size="lg"
+          onClick={() =>
+            document
+              .getElementById("contact")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+          className="text-lg px-8 py-6 h-auto"
+        >
+          Start Your Project
+        </Button>
+      </div>
+    </div>
+ 
+</section>
+
   );
 };
 

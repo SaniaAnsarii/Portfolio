@@ -1,4 +1,10 @@
+import Ribbons from "./Ribbons.tsx";
 import { Button } from "@/components/ui/button";
+import TextType from './TextType';
+
+  
+
+
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -7,14 +13,35 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-hero-gradient px-6 lg:px-8">
-      <div className="max-w-content mx-auto text-center">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
-          Hi, my name is <span className="text-teal">Sania Naz Ansari</span>
+    <section className=" relative min-h-screen flex items-center justify-center bg-hero-gradient px-6 lg:px-8">
+     
+
+ <div className="absolute inset-0 z-0">
+
+    <Ribbons
+      baseThickness={30}
+      colors={['#14b8a6']}
+      speedMultiplier={0.5}
+      maxAge={500}
+      enableFade={false}
+      enableShaderEffect={true}
+    />
+  </div>
+      <div className=" relative max-w-content mx-auto text-center">
+     <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">
+          <TextType 
+            text={[
+              "Hello Everyone",
+              "I'm Sania Naz Ansari, Frontend Developer",
+              "Happy Coding"
+            ]}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter="|"
+          />
         </h1>
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-8">
-          I'm the Frontend Web Developer.
-        </h2>
+
         <Button 
           variant="teal-outline" 
           size="lg"

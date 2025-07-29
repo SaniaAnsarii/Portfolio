@@ -1,4 +1,5 @@
 import Ribbons from "./Ribbons.tsx";
+import Galaxy from "./Galaxy";
 import { Button } from "@/components/ui/button";
 import TextType from './TextType';
 
@@ -14,21 +15,33 @@ const Hero = () => {
 
   return (
     <section className=" relative min-h-screen flex items-center justify-center bg-hero-gradient px-6 lg:px-8">
-     
+      
+      <div className="absolute inset-0 z-0">
+        <Galaxy 
+          mouseRepulsion={true}
+          mouseInteraction={true}
+          density={0.4}
+          glowIntensity={0.15}
+          saturation={0.1}
+          hueShift={200}
+          twinkleIntensity={0}
+          transparent={true}
+        />
+      </div>
 
- <div className="absolute inset-0 z-0">
-
-    <Ribbons
-      baseThickness={30}
-      colors={['#14b8a6']}
-      speedMultiplier={0.5}
-      maxAge={500}
-      enableFade={false}
-      enableShaderEffect={true}
-    />
-  </div>
-      <div className=" relative max-w-content mx-auto text-center">
-     <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">
+      <div className="absolute inset-0 z-0">
+        <Ribbons
+          baseThickness={30}
+          colors={['#14b8a6']}
+          speedMultiplier={0.5}
+          maxAge={500}
+          enableFade={false}
+          enableShaderEffect={true}
+        />
+      </div>
+      
+      <div className=" relative max-w-content mx-auto text-center z-10">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10">
           <TextType 
             text={[
               "Hello Everyone",

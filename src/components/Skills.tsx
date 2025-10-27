@@ -2,14 +2,16 @@ import { Button } from "@/components/ui/button";
 
 const Skills = () => {
   const skills = [
-    { name: "JavaScript", level: 90 },
-    { name: "React", level: 85 },
-    { name: "TypeScript", level: 70 },
-    { name: "Next JS", level: 80 },
-    // { name: "Python", level: 70 },
-    { name: "HTML/CSS", level: 95 },
-    { name: "Git", level: 85 },
-    { name: "SQL", level: 85 },
+    { name: "JavaScript", level: 85 },
+    { name: "React.js", level: 80 },
+    { name: "Next.js", level: 75 },
+    { name: "Node.js", level: 80 },
+    { name: "Express.js", level: 78 },
+    { name: "HTML/CSS/Tailwind", level: 90 },
+    { name: "MongoDB", level: 80 },
+    { name: "MySQL", level: 75 },
+    { name: "Git & GitHub", level: 88 },
+    
   ];
 
   return (

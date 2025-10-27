@@ -22,22 +22,20 @@ const About = () => {
 
           <div className="text-center lg:text-left">
             <p className="text-lg md:text-xl text-teal-foreground mb-6 leading-relaxed">
-              I'm a passionate and Frontend Developer with practical experience
-              in building modern, responsive web applications using React.js,
-              Next.js, and Tailwind CSS. I specialize in creating clean,
-              maintainable code with a strong focus on component-based
-              architecture, performance optimization, and mobile-first design
-              principles. My projects often involve API integration, dynamic
-              routing, and server-side rendering using Next.js. I'm also
-              familiar with backend fundamentals like Node.js and Express, and I
-              use Git/GitHub for version control. I thrive in collaborative
-              environments, value clean UI/UX, and enjoy delivering seamless
-              digital experiences that are both scalable and user-friendly
+              I’m a dedicated Full Stack Developer skilled in the MERN stack
+              (React.js, Next.js, Node.js, Express.js, MongoDB) with a passion
+              for building fast, secure, and responsive web applications. I
+              focus on writing clean, reusable code and optimizing performance
+              through efficient APIs, server-side rendering, and database
+              design. My experience includes deploying projects on AWS and
+              Vercel, integrating JWT authentication, and maintaining CI/CD
+              pipelines. I enjoy working in Agile environments, collaborating
+              with teams, and delivering user-focused solutions that balance
+              functionality, scalability, and design.
             </p>
-           
 
             <a
-              href="https://drive.google.com/file/d/199c9gjfeRFe-gNlhDkhVaEnsVCKmRqdL/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1k0USEtQkSF7KuZR8jqtn8mO1MDje_xQV/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
             >

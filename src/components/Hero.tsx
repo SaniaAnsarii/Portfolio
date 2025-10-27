@@ -45,7 +45,7 @@ const Hero = () => {
           <TextType 
             text={[
               "Hello Everyone",
-              "I'm Sania Naz Ansari, Frontend Developer",
+              "I'm Sania Naz Ansari, Full Stack Developer",
               "Happy Coding"
             ]}
             typingSpeed={75}

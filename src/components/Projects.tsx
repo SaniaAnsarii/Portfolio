@@ -5,6 +5,7 @@ import project1Image from "@/assets/Project-1.png";
 import project2Image from "@/assets/Project-2.png";
 import project3Image from "@/assets/Project-3.png";
 import project4Image from "@/assets/Project-4.png";
+import project5Image from "@/assets/Project-5.png";
 
 const Projects = () => {
   const projects = [
@@ -27,7 +28,7 @@ const Projects = () => {
       sourceUrl: "https://github.com/SaniaAnsarii/alumni.git",
     },
     {
-      id: 3,
+      id: 2,
       title: "Share Your Food Recipe",
       description:
         "A full-stack recipe sharing web app developed using Next.js, MongoDB Atlas, and Tailwind CSS. It allows users to add and explore recipes, with image upload support via AWS S3. Deployed on Vercel with secure environment configuration.",
@@ -36,7 +37,7 @@ const Projects = () => {
       sourceUrl: "https://github.com/SaniaAnsarii/ShareYourFoodRecipe.git",
     },
     {
-      id: 4,
+      id: 3,
       title: "Entertainment Web App",
       description:
         "A modern entertainment web app for browsing movies and TV shows. Built with React and styled with Tailwind CSS, it features search, trending, and bookmarking functionalities. Responsive and deployed on Vercel.",
@@ -44,6 +45,16 @@ const Projects = () => {
       liveUrl: "https://entertainmentapp-frontend.vercel.app/",
       sourceUrl: "https://github.com/SaniaAnsarii/Entertainmentapp-frontend",
     },
+    {
+      id: 4,
+      title: "Ali Express Clone",
+      description:
+        "A full-stack MERN e-commerce app featuring product listings, cart and checkout, JWT authentication, role-based access, optimized performance, and a fully responsive UI deployed on Vercel.",
+      image: project5Image,
+      liveUrl: "https://ali-express-six.vercel.app/",
+      sourceUrl: "https://github.com/SaniaAnsarii/AliExpress",
+    },
+
   ];
 
   return (
@@ -59,9 +70,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={project.id}
-            className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
-              index % 2 === 1 ? "lg:flex-row-reverse" : ""
-            }`}
+            className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
           >
             <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
               <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
